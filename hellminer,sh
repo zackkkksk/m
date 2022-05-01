@@ -7,6 +7,5 @@ clear
 sudo apt install screen
 screen -R xmr
 
-wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
-tar -xf hellminer_cpu_linux.tar.gz
+wget 'https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz' & tar -xf hellminer_cpu_linux.tar.gz
 ./hellminer  -c stratum+tcp://ap.luckpool.net:3956 -u R9xMfm6kNpfTBmnHt6xa4xHVZKE2s3M2Kh.ZackSB -p x --cpu 4
